@@ -1,0 +1,13 @@
+h1,h2,h3 {
+    color: #27aedb;
+    text-align: center;
+}
+
+.videoPlayer{
+	width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
