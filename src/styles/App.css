@@ -9,5 +9,17 @@ h1,h2,h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: auto;
+
+}
+
+.logo{
+  float:right;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 0px 15px;
+
 
 }

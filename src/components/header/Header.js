@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { Player } from 'video-react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "../../node_modules/video-react/dist/video-react.css"; // import css
-import '../styles/App.css';
-import '../styles/navbar.css';
+import "../../../node_modules/video-react/dist/video-react.css"; // import css
+import './../../styles/App.css';
+import '../../styles/navbar.css';
 
-import  Introduction from "./Introduction.js";
-import  VideoPlayer from "./VideoPlayer.js";
-import  LoginContainer from "./LogIn.js";
+import  Introduction from "./../Introduction.js";
+import  VideoPlayer from "./../VideoPlayer.js";
+import  LoginContainer from "./../login/LogIn.js";
 
 class Header extends Component {
     render() {
@@ -20,6 +20,8 @@ class Header extends Component {
 		          <li><Link to="/profile">Profile</Link></li>
 		          <li><Link to="/login">Log In</Link></li>
 		          <li><Link to="/logout">Log Out</Link></li>
+		          <p class="logo">App Aware Routing</p>
+
 		        </ul>
 
 		        <Route path="/" exact component={Home}/>
