@@ -6,9 +6,13 @@ import "../../../node_modules/video-react/dist/video-react.css"; // import css
 import './../../styles/App.css';
 import '../../styles/navbar.css';
 
-import  Introduction from "./../Introduction.js";
-import  VideoPlayer from "./../VideoPlayer.js";
-import  LoginContainer from "./../login/LogIn.js";
+import  Introduction from "./Introduction.js";
+import  VideoPlayer from "./../items/VideoPlayer.js";
+
+import  Login from "./../login/Login.js";
+import  Profile from "./../profile/Profile.js";
+import  Logout from "./../logout/Logout.js";
+import  Home from "./../home/Home.js";
 
 class Header extends Component {
     render() {
@@ -26,8 +30,8 @@ class Header extends Component {
 
 		        <Route path="/" exact component={Home}/>
 		        <Route path="/profile" component={Profile}/>
-		        <Route path="/login" component={LogIn}/>
-		        <Route path="/logout" component={LogOut}/>
+		        <Route path="/login" component={Login}/>
+		        <Route path="/logout" component={Logout}/>
         	</div>
 
         </div>
@@ -35,41 +39,30 @@ class Header extends Component {
     }
 }
 
-
-const Home = () => (
-	<>
-	<Introduction />
-	<h1> Home </h1>
-	<VideoPlayer />
-	</>);
-
-const LogIn = () => (
-  <div class="login">
-  	<Introduction />
-	<h1> Log In </h1>
-	<LoginContainer />
-  </div>
-);
-
-const Profile = () => (
-  <div class="profile">
-  	<Introduction />
-	<h1> Profile </h1>
-	<VideoPlayer />
-	<br />
-	<VideoPlayer />
-
-  </div>
-);
-
-
-const LogOut = () => (
-  <div class="logout">
-  	<Introduction />
-	<h1> Log Out </h1>
-
-  </div>
-);
+//
+//const Home = () => (
+//	<>
+//	<Home />
+//	</>);
+//
+//const LogIn = () => (
+//  <div class="login">
+//	<Login />
+//  </div>
+//);
+//
+//const Profile = () => (
+//  <div class="profile">
+//    <Profile />
+//  </div>
+//);
+//
+//
+//const LogOut = () => (
+//  <div class="logout">
+//    <Logout />
+//  </div>
+//);
 
 
 export default Header;
