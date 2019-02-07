@@ -1,6 +1,8 @@
 h1,h2,h3 {
     color: #27aedb;
     text-align: center;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
 }
 
 .videoPlayer{
@@ -23,8 +25,37 @@ h1,h2,h3 {
 
 }
 
-body{
-  background-color: #cccccc;
-  background-image: linear-gradient(#132232, #832323, #b23111);
+.image-logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 15px 20px;
 
+}
+
+.button-logout{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-logout:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+
+body{
+  background-color: #F0F8FF;
+  background-repeat: no-repeat;
+  background-size: auto;
 }

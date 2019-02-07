@@ -7,9 +7,8 @@ class Introduction extends Component {
         return (
 		<div>
   			<div class="main">
-		        <h1>App Aware Routing</h1>
-		        <h2>Hackathon 2019</h2>
-		        <h3>Connecting AppDynamics and Cisco</h3>
+		        <h1>Team App Aware Routing</h1>
+		        <h3>How Might We Cultivate AppD Cisco Synergy?</h3>
         	</div>
         </div>
         );

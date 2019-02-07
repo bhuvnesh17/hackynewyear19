@@ -5,14 +5,6 @@ import '../../styles/App.css';
 import  Introduction from "../header/Introduction.js";
 import { withRouter } from 'react-router-dom'
 
-const Babloo = withRouter(({ history }) => (
-  <button
-    type='button'
-    onClick={() => { history.push('/login') }}
-  >
-    Click Me!
-  </button>
-))
 
 
 class Logout extends Component {
@@ -21,12 +13,14 @@ class Logout extends Component {
 		<div>
             <Introduction />
             <h1>Log Out</h1>
-            <div>{Babloo}</div>
+            <div class="image-logout">
+               <img src = "http://www.quickmeme.com/img/94/949b7fad5feabcd6a3178227c0c6c4c6a5ecd5934e6d7b40965a9ac8086820ed.jpg" />
+            </div>
+
         </div>
         );
     }
 }
-
 
 
 export default Logout;

@@ -12,9 +12,7 @@ class Home extends Component {
 		<div>
             <Introduction />
             <h1>HOME</h1>
-            <VideoPlayer poster="src/images/img1.jpg" url="src/videos/hans.mp4"/>
-            <br />
-            <VideoPlayer poster="src/images/img2.jpg" url="src/videos/happy.mp4"/>
+            <VideoPlayer poster="https://pbs.twimg.com/media/C2DvlmvUsAMd5fq.jpg" url="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
             <br />
 
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import '../../styles/login.css';
 import { Redirect } from 'react-router-dom'
-import  Profile from "./../profile/Profile.js";
 import {withRouter} from 'react-router-dom';
 
 class FluidInput extends Component {
@@ -57,34 +56,13 @@ class FluidInput extends Component {
   }
 }
 
-//  onClick = () => {
-//    this.props.history.push("/logout")
-//  }
-//
-//  redirectToTarget = () => {
-//    this.props.history.push("/logout")
-//  }
+
+class ButtonToggle extends React.Component {
 
 
-class Button extends React.Component {
-
-  state = {
-    redirect: false
-  }
-  setRedirect = () => {
-  console.log("Hi THere")
-    this.setState({
-      redirect: true
-    })
-  }
-  renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to="/profile" component={Profile}/>
-    }
-  }
   redirectToTarget = () => {
     console.log("Hi in targer")
-    this.props.history.push("/logout")
+    this.props.history.push("/profile")
         console.log("Hi in targer2")
 
   }
@@ -101,13 +79,12 @@ class Button extends React.Component {
     );
   }
 }
-//        <Button buttonText="log in" buttonClass="login-button" onClick={`this.props.history.push('/profile')`} />
 
 
 class LoginContainer extends React.Component {
 
   redirectToTarget = () => {
-    this.props.history.push("/logout")
+    this.props.history.push("/profile")
   }
 
   render() {
@@ -116,7 +93,7 @@ class LoginContainer extends React.Component {
       margin: "15px 0"
     };
 
-    const ButtonRouter = withRouter(Button)
+    const ButtonRouter = withRouter(ButtonToggle)
     return (
       <div className="login-container">
 
@@ -126,9 +103,6 @@ class LoginContainer extends React.Component {
         <FluidInput type="text" label="name" id="name" style={style} />
         <FluidInput type="password" label="password" id="password" style={style} />
         <ButtonRouter buttonText="log in" buttonClass="login-button" onClick={this.props.onClick} />
-
-        <button onClick={this.redirectToTarget.bind(this)}>Redirect</button>
-
       </div>
     );
   }

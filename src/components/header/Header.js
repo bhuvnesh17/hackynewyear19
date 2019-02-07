@@ -24,7 +24,7 @@ class Header extends Component {
 		          <li><Link to="profile">Profile</Link></li>
 		          <li><Link to="login">Log In</Link></li>
 		          <li><Link to="logout">Log Out</Link></li>
-		          <p class="logo">App Aware Routing</p>
+		          <p class="logo"> App Aware Routing</p>
 
 		        </ul>
 
