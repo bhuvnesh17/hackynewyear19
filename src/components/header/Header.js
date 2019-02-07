@@ -21,9 +21,9 @@ class Header extends Component {
         	<div class="links">
 		        <ul>
 		          <li><Link to="/">Home</Link></li>
-		          <li><Link to="/profile">Profile</Link></li>
-		          <li><Link to="/login">Log In</Link></li>
-		          <li><Link to="/logout">Log Out</Link></li>
+		          <li><Link to="profile">Profile</Link></li>
+		          <li><Link to="login">Log In</Link></li>
+		          <li><Link to="logout">Log Out</Link></li>
 		          <p class="logo">App Aware Routing</p>
 
 		        </ul>
@@ -39,30 +39,6 @@ class Header extends Component {
     }
 }
 
-//
-//const Home = () => (
-//	<>
-//	<Home />
-//	</>);
-//
-//const LogIn = () => (
-//  <div class="login">
-//	<Login />
-//  </div>
-//);
-//
-//const Profile = () => (
-//  <div class="profile">
-//    <Profile />
-//  </div>
-//);
-//
-//
-//const LogOut = () => (
-//  <div class="logout">
-//    <Logout />
-//  </div>
-//);
 
 
 export default Header;

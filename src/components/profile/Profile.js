@@ -12,9 +12,9 @@ class Profile extends Component {
           <div class="profile">
             <Introduction />
             <h1> Profile </h1>
-            <VideoPlayer  url="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
+            <VideoPlayer  url="src/videos/hans.mp4"/>
             <br />
-            <VideoPlayer  url="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
+            <VideoPlayer  url="src/videos/happy.mp4"/>
             <br />
           </div>
         </div>
