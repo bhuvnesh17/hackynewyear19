@@ -7,8 +7,9 @@ class Introduction extends Component {
         return (
 		<div>
   			<div class="main">
-		        <h1>Team App Aware Routing</h1>
-		        <h3>How Might We Cultivate AppD Cisco Synergy?</h3>
+		        <h1>Kaiser Permanente Pager Duty Service</h1>
+		        <h3>A HIPAA Compliant Medical Service</h3>
+		        <h3>A complete Cisco solution integrating AppDynamics and Viptella</h3>
         	</div>
         </div>
         );

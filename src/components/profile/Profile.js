@@ -12,6 +12,7 @@ class Profile extends Component {
   redirectToTarget = () => {
     this.props.history.push("/logout")
   }
+//            <VideoPlayer  url="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
 
     render() {
         return (
@@ -19,12 +20,12 @@ class Profile extends Component {
           <div class="profile">
             <Introduction />
             <h1> Profile </h1>
+            <h3>Note: Data sent through Fast and Secure MPLS Network</h3>
             <Gallery />
             <br />
-            <VideoPlayer  url="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
+            <iframe className="videoPlayer" width="408" height="350" src="https://www.youtube.com/embed/_o-qzPd9kIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br />
-            <VideoPlayer  url="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
-          </div>
+            <iframe className="videoPlayer" width="408" height="350" src="https://www.youtube.com/embed/VRe9YzfE1sc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </div>
 
         <div class="image-logout">
             <br />

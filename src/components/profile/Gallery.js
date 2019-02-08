@@ -8,10 +8,10 @@ import '../../styles/Gallery.css';
 import  Introduction from "../header/Introduction.js";
 
 const imageData = [
-  {id: 1, thumbnail: 'https://i.imgur.com/2HLblaP.png'},
-  {id: 2, thumbnail: 'https://i.imgur.com/3cPup5s.png'},
-  {id: 3, thumbnail: 'https://i.imgur.com/2QTDv2F.jpg'},
-  {id: 4, thumbnail: 'https://i.imgur.com/ssiNlOs.jpg'}
+  {id: 1, thumbnail: 'https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-scissors-in-head.jpg'},
+  {id: 2, thumbnail: 'https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-knife-in-head.jpg'},
+  {id: 3, thumbnail: 'https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-fork-in-foot.jpg'},
+  {id: 4, thumbnail: 'https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-nail-in-face.jpg'}
 ];
 
 const active_display = {id: 1};
@@ -54,17 +54,17 @@ function Images (props) {
         <div className = "full-image full-image-style">
           {
             (props.active_display.id === 1) ?
-            <img src = "https://i.imgur.com/2HLblaP.png" width = "500" height ="500" /> : null
+            <img src = "https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-scissors-in-head.jpg" width = "720" height ="550" /> : null
           }
           {
             (props.active_display.id === 2) ?
-              <img src = "https://i.imgur.com/3cPup5s.png" width = "500" height ="500" /> : null           }
+              <img src = "https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-knife-in-head.jpg" width = "720" height ="550" /> : null           }
           {
             (props.active_display.id === 3) ?
-              <img src = "https://i.imgur.com/2QTDv2F.jpg" width = "500" height ="500" /> : null           }
+              <img src = "https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-fork-in-foot.jpg" width = "720" height ="550" /> : null           }
           {
             (props.active_display.id === 4) ?
-              <img src = "https://i.imgur.com/ssiNlOs.jpg" width = "500" height ="500" /> : null           }
+              <img src = "https://allthatsinteresting.com/wordpress/wp-content/uploads/2016/06/weird-x-rays-nail-in-face.jpg" width = "720" height ="550" /> : null           }
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@ function ImagesList (props) {
             props.imageData.map(preview => {
               return (
                 <div onClick ={() => imageChange(preview.id)} key = {preview.id}                       className = "previews previews-style">
-                  <img src = {preview.thumbnail} width = '100' height = '100' />
+                  <img src = {preview.thumbnail} width = '150' height = '120' />
                 </div>
               )
             })

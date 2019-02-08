@@ -24,7 +24,7 @@ class Header extends Component {
 		          <li><Link to="profile">Profile</Link></li>
 		          <li><Link to="login">Log In</Link></li>
 		          <li><Link to="logout">Log Out</Link></li>
-		          <p class="logo"> App Aware Routing</p>
+		          <img class="logo" src="https://www.kaiserpermanentehistory.org/wp-content/uploads/2012/02/Current-2008-KPcen_307.jpg" width="100" />
 
 		        </ul>
 

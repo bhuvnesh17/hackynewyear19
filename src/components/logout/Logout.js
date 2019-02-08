@@ -6,6 +6,7 @@ import  Introduction from "../header/Introduction.js";
 import { withRouter } from 'react-router-dom'
 
 
+//               <img src = "http://www.quickmeme.com/img/94/949b7fad5feabcd6a3178227c0c6c4c6a5ecd5934e6d7b40965a9ac8086820ed.jpg" />
 
 class Logout extends Component {
     render() {
@@ -14,7 +15,7 @@ class Logout extends Component {
             <Introduction />
             <h1>Log Out</h1>
             <div class="image-logout">
-               <img src = "http://www.quickmeme.com/img/94/949b7fad5feabcd6a3178227c0c6c4c6a5ecd5934e6d7b40965a9ac8086820ed.jpg" />
+               <img src = "https://i.gifer.com/AdNS.gif" />
             </div>
 
         </div>
